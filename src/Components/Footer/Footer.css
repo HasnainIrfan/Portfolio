@@ -1,0 +1,43 @@
+.Footer {
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    margin-top: -12rem;
+}
+
+.f-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    gap: 4rem;
+    color: white;
+}
+
+.f-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width:480px) {
+    .Footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .f-content{
+        display: flex;
+        gap: 4rem;
+        margin-top: 4rem;
+    }
+
+    .f-icons>* {
+        width: 2rem;
+        margin-top: -3rem;
+        margin-left: -1rem;
+    }
+}

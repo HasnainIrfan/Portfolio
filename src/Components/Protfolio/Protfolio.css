@@ -1,0 +1,32 @@
+.Protfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
+.Protfolio>span:nth-of-type(1){
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.Protfolio>span:nth-of-type(2){
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+.Protfolio .swiper{
+    overflow: visible !important;
+}
+.portfolio-slider{
+    margin-top: 3rem;
+    width: 100%;
+}
+.portfolio-slider .swiper-slide{
+    width: 20rem;
+}
+.Protfolio img{
+    width: 19rem;
+    filter: drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
+    border-radius: 19px;
+}

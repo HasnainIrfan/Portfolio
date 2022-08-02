@@ -1,0 +1,105 @@
+.works{
+    display: flex;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    height: 90vh; 
+}
+.w-right{
+    position: relative;
+}
+.w-mainCricle{
+    background-color: white;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    left: 9rem;
+    z-index: 2;
+}
+.w-mainCricle>*{
+    position: absolute;
+}
+.w-mainCricle>:nth-child(1){
+    top: -3rem;
+    left: 6rem;
+}
+.w-mainCricle>:nth-child(2){
+    left: -3rem;
+    top: 5rem;
+}
+.w-mainCricle>:nth-child(3){
+    left: 6rem;
+    top: 5rem;
+}
+.w-mainCricle>:nth-child(4){
+    left: 15rem;
+    top: 5rem;
+}
+.w-mainCricle>:nth-child(5){
+    left: 6rem;
+    top: 13rem;
+}
+.w-secCricle{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border: 5px solid #ebebeb;
+    border-radius: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: var(--smboxShadow);
+}
+.w-secCricle>a>img{
+    transform: scale(0.5);
+}
+.fiver-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.w-backCricle{
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
+    z-index: 1;
+}
+.blueCricle{
+    background-color:  #194988;
+    left: 18rem;
+    top: 0;
+}
+.YellowCricle{
+    background-color: #F5C32C;
+    left: 18rem;
+    top: 8rem;
+}
+.btn-a{
+    margin-top: 3rem;
+}
+@media screen and (max-width:480px) {
+   .works{
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 5rem;
+   }
+    .w-right{
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        transform: scale(0.7);
+        margin-top: -12rem;
+
+    }
+    .w-mainCricle{
+        position: static;
+    }
+    .w-backCricle{
+        left: 8rem !important;
+    }
+ }
